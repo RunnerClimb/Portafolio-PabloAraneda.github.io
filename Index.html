@@ -1,728 +1,306 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pablo Araneda | Full Stack Developer</title>
-  <meta name="description" content="Ingeniero de Software Full Stack especializado en .NET, ASP.NET Core, Blazor, Angular y Spring Boot. Experiencia en Honda, SERNAPESCA, Fonasa y Scotiabank." />
-  <meta name="author" content="Pablo Araneda" />
-  <link rel="icon" href="img/foto.jpeg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
-  <!-- NAVBAR -->
-  <nav class="nav" id="navbar">
-    <div class="nav-inner">
-      <span class="nav-logo"><span class="accent">&lt;</span>PA<span class="accent">/&gt;</span></span>
-      <div class="nav-links">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Araneda | Full Stack Developer</title>
+    <!-- SEO -->
+    <meta name="description"
+        content="Ingeniero de Software Full Stack especializado en .NET, Spring Boot y microservicios. Experiencia en Honda, SERNAPESCA, Fonasa y Scotiabank.">
+    <meta name="author" content="Pablo Araneda">
+    <!-- Favicon -->
+    <link rel="icon" href="img/foto.jpeg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!-- NAVBAR -->
+    <nav class="nav">
         <a href="#about">Sobre mí</a>
         <a href="#experience">Experiencia</a>
-        <a href="#skills">Stack</a>
-        <a href="#ai-tools">IA &amp; Dev</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#contact">Contacto</a>
-      </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
-    </div>
-  </nav>
+        <a href="#skills">Stack Tecnológico</a> 
+        <a href="#projects">Proyectos</a>  
+        <a href="#contact">Contacto</a> 
+    </nav>
+    <header class="hero"> <img src="img/foto.jpeg" alt="Pablo Araneda" class="profile-img">
+        <h1>Pablo Ignacio Araneda Ruz</h1>
+        <p>Full Stack Developer | .NET | Spring Boot | Microservicios | SQL Server</p>
+        <div class="buttons">
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Disponible para proyectos
-      </div>
-      <img src="img/foto.jpeg" alt="Pablo Araneda" class="profile-img" />
-      <h1>Pablo Ignacio<br /><span class="name-accent">Araneda Ruz</span></h1>
-      <p class="hero-tagline">Full Stack Developer</p>
-      <div class="hero-tags">
-        <span class="tag">.NET 8/9</span>
-        <span class="tag">ASP.NET Core</span>
-        <span class="tag">Blazor</span>
-        <span class="tag">Angular</span>
-        <span class="tag">Spring Boot</span>
-        <span class="tag">Microservicios</span>
-        <span class="tag ai-tag">Claude Code</span>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">7+</span>
-          <span class="stat-label">Años de<br/>experiencia</span>
+            <a href="https://wa.me/56922474997" target="_blank" class="btn"> Contáctame por WhatsApp </a>
+            <a href="https://www.linkedin.com/in/pablo-ignacio-araneda-ruz-50228894/" target="_blank"
+                class="btn btn-linkedin"> Ver mi LinkedIn </a>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">12+</span>
-          <span class="stat-label">Empresas<br/>cliente</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">4+</span>
-          <span class="stat-label">Stacks<br/>dominados</span>
-        </div>
-      </div>
-      <div class="buttons">
-        <a href="https://wa.me/56922474997" target="_blank" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          WhatsApp
-        </a>
-        <a href="https://www.linkedin.com/in/pablo-ignacio-araneda-ruz-50228894/" target="_blank" class="btn btn-linkedin">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          LinkedIn
-        </a>
-      </div>
-    </div>
-    <div class="hero-scroll">
-      <span>scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </header>
+    </header>
+    <section id="about" class="about">
+        <h2>Sobre mí</h2>
+        <p> Ingeniero de Software con sólida experiencia en desarrollo Full Stack, especializado en tecnologías .NET y
+            Java (Spring Boot), con enfoque en arquitecturas de microservicios y sistemas empresariales de alta
+            disponibilidad. A lo largo de mi trayectoria he participado en el diseño, desarrollo e implementación de
+            soluciones tecnológicas para clientes de gran escala como Honda, SERNAPESCA, Fonasa y Scotiabank, abordando
+            problemáticas críticas de negocio mediante sistemas robustos, seguros y escalables. Cuento con experiencia
+            en construcción de APIs REST, integración de servicios externos (como plataformas de pago Transbank),
+            desarrollo de lógica de negocio avanzada en base de datos, y procesos de migración de datos (ETL) a nivel
+            internacional. Además, he trabajado bajo metodologías ágiles (Scrum), participando activamente en equipos
+            multidisciplinarios, aportando soluciones eficientes, optimizando procesos y asegurando la calidad del
+            software en cada etapa del desarrollo. </p>
+    </section>
 
-  <!-- SOBRE MÍ -->
-  <section id="about" class="about section-padded">
-    <div class="section-label">01 — Perfil</div>
-    <h2 class="section-title">Sobre mí</h2>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          Ingeniero de Software Full Stack con más de <strong>7 años de experiencia</strong> en el diseño,
-          desarrollo e implementación de soluciones empresariales de alta disponibilidad. Especializado en
-          ecosistemas <strong>.NET (ASP.NET Core, Blazor, .NET 8/9)</strong> y <strong>Java (Spring Boot)</strong>,
-          con arquitecturas orientadas a microservicios, seguridad basada en JWT y pipelines CI/CD robustos.
-        </p>
-        <p>
-          He contribuido a sistemas críticos para organizaciones como <strong>Honda, SERNAPESCA, Fonasa y Scotiabank</strong>,
-          abordando problemáticas complejas de negocio con soluciones escalables, seguras y auditables.
-          Cuento con experiencia en integración de pasarelas de pago (Transbank), procesos ETL internacionales
-          y desarrollo frontend con <strong>Angular (v10–v21)</strong> y React.
-        </p>
-        <p>
-          Actualmente incorporo herramientas de <strong>desarrollo asistido por IA</strong> —como Claude Code—
-          para acelerar ciclos de desarrollo, generar scaffolding inteligente y mejorar la calidad del
-          código en proyectos .NET 8/9 y Angular moderno.
-        </p>
-      </div>
-      <div class="about-highlights">
-        <div class="highlight-card">
-          <div class="highlight-icon">🏗️</div>
-          <div>
-            <strong>Arquitectura</strong>
-            <span>Microservicios, REST APIs, modular monolith, Clean Architecture</span>
-          </div>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🔐</div>
-          <div>
-            <strong>Seguridad</strong>
-            <span>JWT, OAuth2, Veracode, SonarQube, Fortify</span>
-          </div>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">⚙️</div>
-          <div>
-            <strong>DevOps</strong>
-            <span>Docker, Jenkins, GitLab CI, GitHub Actions</span>
-          </div>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-icon">🤖</div>
-          <div>
-            <strong>IA &amp; Herramientas</strong>
-            <span>Claude Code, desarrollo asistido por LLMs en .NET 8/9</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCIA -->
-  <section id="experience" class="experience section-padded">
-    <div class="section-label">02 — Trayectoria</div>
-    <h2 class="section-title">Experiencia Profesional</h2>
-
-    <div class="timeline">
-
-      <div class="timeline-item featured">
-        <div class="timeline-dot"></div>
+    <section id="experience" class="experience">
+        <h2>Experiencia Profesional</h2>
         <div class="card">
-          <div class="card-header">
-            <div>
-              <h3>Banco de Chile</h3>
-              <span class="card-role">Ingeniero de Software II</span>
-            </div>
-            <span class="card-date">Dic 2025 – Feb 2026</span>
-          </div>
-          <div class="tech-pills">
-            <span>C#</span><span>ASP.NET Core</span><span>Angular</span><span>SQL Server</span><span>Razor</span>
-          </div>
-          <ul>
-            <li>Desarrollo de aplicaciones empresariales bancarias con C# y ASP.NET Core MVC sobre SQL Server.</li>
-            <li>Implementación de interfaces frontend con Angular, Razor, JavaScript, XML y JSON.</li>
-            <li>Optimización de procedimientos almacenados para lógica de negocio crítica.</li>
-          </ul>
+            <h3>Banco de Chile - Ingeniero de Software II</h3> <span>Diciembre 2025 - Febrero 2026 (Reemplazo)</span>
+            <ul>
+                <li>Desarrollo de aplicaciones empresariales con C#, ASP.NET Core, MVC y SQL Server.</li>
+                <li>Desarrollo Front-End con Angular, Razor, JavaScript, XML y JSON.</li>
+                <li>Desarrollo de procedimientos almacenados.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="timeline-item featured">
-        <div class="timeline-dot"></div>
         <div class="card">
-          <div class="card-header">
-            <div>
-              <h3>Honda</h3>
-              <span class="card-role">Ingeniero de Software II</span>
-            </div>
-            <span class="card-date">May 2024 – Dic 2025</span>
-          </div>
-          <div class="tech-pills">
-            <span>C#</span><span>ASP.NET MVC</span><span>SQL Server</span><span>JWT</span><span>Docker</span><span>Jenkins</span><span class="pill-ai">IA Chatbot</span>
-          </div>
-          <ul>
-            <li>Desarrollo y mantenimiento del sistema interno HondaNet con C#, ASP.NET MVC y SQL Server.</li>
-            <li>Implementación de autenticación y autorización basada en JWT con arquitectura modular por roles.</li>
-            <li>Integración de chatbot con IA para soporte interno de usuarios.</li>
-            <li>Pipelines CI/CD con Docker y Jenkins en entornos DEV, QA y Producción.</li>
-            <li>Construcción de procedimientos almacenados complejos para módulos de proveedores y remuneraciones.</li>
-            <li>Metodología Scrum en equipo multidisciplinario.</li>
-          </ul>
+            <h3>Honda - Ingeniero de Software II</h3>
+            <span>Mayo 2024 - Diciembre 2025</span>
+            <ul>
+                <li>Desarrollo de aplicaciones empresariales con C#, ASP.NET MVC y SQL Server.</li>
+                <li>Implementación de seguridad basada en JWT y arquitectura modular.</li>
+                <li>Desarrollo Front-End con Razor, JavaScript y jQuery.</li>
+                <li>Construcción de procedimientos almacenados complejos.</li>
+                <li>Integración de chatbot con IA.</li>
+                <li>Uso de Docker y Jenkins (CI/CD).</li>
+                <li>Metodología Scrum.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
         <div class="card">
-          <div class="card-header">
-            <div>
-              <h3>Cygnus (Epiroc)</h3>
-              <span class="card-role">Ingeniero de Software</span>
-            </div>
-            <span class="card-date">Ene 2024 – Feb 2024</span>
-          </div>
-          <div class="tech-pills">
-            <span>.NET MVC</span><span>JWT</span><span>Swagger</span><span>SQL Server</span>
-          </div>
-          <ul>
-            <li>Desarrollo de servicios REST con .NET MVC, documentados con Swagger/OpenAPI.</li>
-            <li>Seguridad con JWT e implementación de triggers, funciones y procedimientos almacenados.</li>
-          </ul>
+            <h3>Cygnus (Epiroc) - Ingeniero de Software</h3>
+            <span>Enero 2024 - Febrero 2024</span>
+            <ul>
+                <li>Desarrollo de servicios REST con .NET MVC.</li>
+                <li>Frontend con JavaScript y jQuery.</li>
+                <li>Seguridad con JWT.</li>
+                <li>Documentación con Swagger.</li>
+                <li>Procedimientos almacenados, triggers y funciones.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
         <div class="card">
-          <div class="card-header">
-            <div>
-              <h3>Minjus (Catena)</h3>
-              <span class="card-role">Ingeniero de Software II</span>
-            </div>
-            <span class="card-date">Sep 2023 – Dic 2023</span>
-          </div>
-          <div class="tech-pills">
-            <span>Spring Boot</span><span>React</span><span>Docker</span><span>JWT</span><span>Swagger</span>
-          </div>
-          <ul>
-            <li>Desarrollo de microservicios con Spring Boot y frontend en React.</li>
-            <li>Contenedorización con Docker y documentación API con Swagger.</li>
-          </ul>
+            <h3>Minjus (Catena) - Ingeniero de Software II</h3>
+            <span>Septiembre 2023 - Diciembre 2023</span>
+            <ul>
+                <li>Microservicios con Spring Boot.</li>
+                <li>Frontend con React.</li>
+                <li>Docker y seguridad JWT.</li>
+                <li>Documentación con Swagger.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
         <div class="card">
-          <div class="card-header">
-            <div>
-              <h3>Mueve (Altia)</h3>
-              <span class="card-role">Ingeniero de Software</span>
-            </div>
-            <span class="card-date">Jun 2023 – Ago 2023</span>
-          </div>
-          <div class="tech-pills">
-            <span>Node.js</span><span>React</span><span>MySQL</span><span>Jenkins</span>
-          </div>
-          <ul>
-            <li>Backend con Node.js, frontend con React y base de datos MySQL.</li>
-            <li>Integración continua con Jenkins.</li>
-          </ul>
+            <h3>Mueve (Altia) - Ingeniero de Software</h3>
+            <span>Junio 2023 - Agosto 2023</span>
+            <ul>
+                <li>Backend con Node.js.</li>
+                <li>Frontend con React.</li>
+                <li>Base de datos MySQL.</li>
+                <li>CI/CD con Jenkins.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
         <div class="card">
-          <div class="card-header">
-            <div>
-              <h3>SERNAPESCA (OG Consultores)</h3>
-              <span class="card-role">Ingeniero de Software</span>
-            </div>
-            <span class="card-date">Feb 2023 – Jun 2023</span>
-          </div>
-          <div class="tech-pills">
-            <span>Spring Boot</span><span>Angular 11</span><span>SQL Server</span><span>Jenkins</span><span>Docker</span>
-          </div>
-          <ul>
-            <li>Arquitectura de microservicios para sistema de control de embarcaciones pesqueras.</li>
-            <li>Frontend con Angular 11 y pipeline CI/CD con Jenkins y Docker.</li>
-          </ul>
+            <h3>SERNAPESCA (OG Consultores) - Ingeniero de Software</h3>
+            <span>Febrero 2023 - Junio 2023</span>
+            <ul>
+                <li>Microservicios con Spring Boot y SQL Server.</li>
+                <li>Frontend con Angular 11.</li>
+                <li>Integración con Jenkins y Docker.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
         <div class="card">
-          <div class="card-header">
-            <div>
-              <h3>Entelgy / Novasis</h3>
-              <span class="card-role">Analista de Sistemas</span>
-            </div>
-            <span class="card-date">Ago 2022 – Ene 2023</span>
-          </div>
-          <div class="tech-pills">
-            <span>Spring Boot</span><span>Angular 11</span><span>SQL Server</span><span>GitLab</span>
-          </div>
-          <ul>
-            <li>Backend Spring Boot y frontend Angular 11 en sistemas de gobierno.</li>
-          </ul>
+            <h3>Entelgy / Novasis - Analista de Sistemas</h3>
+            <span>Agosto 2022 - Enero 2023</span>
+            <ul>
+                <li>Backend con Spring Boot y SQL Server.</li>
+                <li>Frontend con Angular 11.</li>
+                <li>Uso de Jenkins y GitLab.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
         <div class="card">
-          <div class="card-header">
-            <div>
-              <h3>Equifax (Novasis)</h3>
-              <span class="card-role">Analista de Sistemas</span>
-            </div>
-            <span class="card-date">Abr 2022 – Jun 2022</span>
-          </div>
-          <div class="tech-pills">
-            <span>Spring Boot</span><span>PostgreSQL</span><span>Maven</span><span>SonarQube</span><span>Fortify</span>
-          </div>
-          <ul>
-            <li>Análisis de calidad de código con SonarQube y Fortify en ambiente financiero regulado.</li>
-          </ul>
+            <h3>Equifax (Novasis) - Analista de Sistemas</h3>
+            <span>Abril 2022 - Junio 2022</span>
+            <ul>
+                <li>Backend con Spring Boot y PostgreSQL.</li>
+                <li>Configuración Maven y archivos YML.</li>
+                <li>Uso de SonarQube y Fortify.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
         <div class="card">
-          <div class="card-header">
-            <div>
-              <h3>Fonasa (Anticipa)</h3>
-              <span class="card-role">Analista de Sistemas</span>
-            </div>
-            <span class="card-date">Ene 2021 – Ago 2021</span>
-          </div>
-          <div class="tech-pills">
-            <span>Spring Boot</span><span>Oracle</span><span>WebLogic</span><span>Transbank</span>
-          </div>
-          <ul>
-            <li>Integración con pasarela de pagos Transbank en sistema Bono Web de salud pública.</li>
-            <li>Despliegue en Oracle WebLogic con base de datos Oracle.</li>
-          </ul>
+            <h3>Genesys (Sonda) - Ingeniero de Software</h3>
+            <span>Septiembre 2021 - Enero 2022</span>
+            <ul>
+                <li>Microservicios con Spring Boot y Java 1.8.</li>
+                <li>APIs REST.</li>
+                <li>Base de datos PostgreSQL.</li>
+                <li>Lógica de negocio en backend.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
         <div class="card">
-          <div class="card-header">
-            <div>
-              <h3>Scotiabank / Entelgy (PyC Consultores)</h3>
-              <span class="card-role">Analista de Sistemas</span>
-            </div>
-            <span class="card-date">Jun 2019 – Dic 2020</span>
-          </div>
-          <div class="tech-pills">
-            <span>Java J2EE</span><span>JSP</span><span>SQL Server</span><span>IBM WebSphere</span>
-          </div>
-          <ul>
-            <li>Desarrollo Java J2EE en entorno bancario regulado, despliegues en IBM WebSphere.</li>
-          </ul>
+            <h3>Fonasa (Anticipa) - Analista de Sistemas</h3>
+            <span>Enero 2021 - Agosto 2021</span>
+            <ul>
+                <li>APIs REST con Spring Boot.</li>
+                <li>Integración con Transbank.</li>
+                <li>Oracle y WebLogic.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
         <div class="card">
-          <div class="card-header">
+            <h3>Scotiabank / Entelgy (PyC Consultores)</h3>
+            <span>Junio 2019 - Diciembre 2020</span>
+            <ul>
+                <li>Java J2EE, JSP, Servlets.</li>
+                <li>SQL Server.</li>
+                <li>Despliegue en ambientes productivos.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Dimensión S.A - Programador</h3>
+            <span>Agosto 2018 - Mayo 2019</span>
+            <ul>
+                <li>Desarrollo en C# y .NET.</li>
+                <li>ASP.NET MVC.</li>
+                <li>SQL Server.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Práctica Profesional - Instituto Profesional de Chile</h3>
+            <span>Abril 2018 - Julio 2018</span>
+            <ul>
+                <li>Soporte técnico.</li>
+                <li>Apoyo en áreas informáticas.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Stack Tecnológico</h2>
+
+        <div class="grid">
             <div>
-              <h3>Dimensión S.A</h3>
-              <span class="card-role">Programador</span>
+                <h4>Backend</h4>
+                <p>C#, .NET, Spring Boot, Node.js</p>
             </div>
-            <span class="card-date">Ago 2018 – May 2019</span>
-          </div>
-          <div class="tech-pills">
-            <span>C#</span><span>ASP.NET MVC</span><span>.NET Framework 4.5</span><span>SQL Server</span>
-          </div>
-          <ul>
-            <li>Desarrollo de aplicaciones web con C#, ASP.NET MVC y SQL Server sobre .NET Framework 4 / 4.5.2.</li>
-          </ul>
+
+            <div>
+                <h4>Frontend</h4>
+                <p>Angular, React, Razor, JavaScript, Bootstrap</p>
+            </div>
+
+            <div>
+                <h4>Base de Datos</h4>
+                <p>SQL Server, MySQL, PostgreSQL, Oracle</p>
+            </div>
+
+            <div>
+                <h4>DevOps</h4>
+                <p>Docker, Jenkins, GitHub, GitLab</p>
+            </div>
         </div>
-      </div>
+    </section>
 
-    </div>
-  </section>
+    <section  id="projects" class="projects">
+        <h2>Proyectos Destacados</h2>
 
-  <!-- STACK TECNOLÓGICO -->
-  <section id="skills" class="skills section-padded">
-    <div class="section-label">03 — Tecnologías</div>
-    <h2 class="section-title">Stack Tecnológico</h2>
-
-    <div class="skills-grid">
-
-      <div class="skill-block">
-        <div class="skill-block-header">
-          <span class="skill-icon">⚙️</span>
-          <h4>Backend</h4>
+        <div class="card">
+            <h3>Integración API Transbank - Fonasa</h3>
+            <p>
+                Desarrollo e integración de API de Transbank para la gestión de pagos en línea
+                en el sistema Bono Web de Fonasa, permitiendo la correcta compra de bonos de atención médica.
+            </p>
+            <ul>
+                <li>Implementación de servicios REST con Spring Boot.</li>
+                <li>Integración segura con pasarela de pagos Transbank.</li>
+                <li>Validación de transacciones y control de estados de pago.</li>
+                <li>Despliegue en Oracle WebLogic.</li>
+                <li>Base de datos Oracle con procedimientos almacenados.</li>
+            </ul>
         </div>
-        <div class="skill-tags">
-          <span class="stag primary">C#</span>
-          <span class="stag primary">ASP.NET MVC</span>
-          <span class="stag primary">ASP.NET Core</span>
-          <span class="stag primary">Blazor</span>
-          <span class="stag primary">.NET 8</span>
-          <span class="stag primary">.NET 9</span>
-          <span class="stag">Spring Boot</span>
-          <span class="stag">Java J2EE</span>
-          <span class="stag">Node.js</span>
-          <span class="stag">APIs REST</span>
-          <span class="stag">Microservicios</span>
-          <span class="stag">JWT</span>
-          <span class="stag">Swagger / OpenAPI</span>
+
+        <div class="card">
+            <h3>Sistema de Control de Embarcaciones - SERNAPESCA</h3>
+            <p>
+                Desarrollo de sistema para el control y validación de carga de embarcaciones,
+                permitiendo evaluar el cumplimiento de límites de peso en kilos según normativa.
+            </p>
+            <ul>
+                <li>Arquitectura de microservicios con Spring Boot.</li>
+                <li>Frontend desarrollado con Angular 11.</li>
+                <li>Validación de reglas de negocio para carga máxima por embarcación.</li>
+                <li>Gestión de datos con SQL Server (tablas, vistas, procedimientos).</li>
+                <li>Integración continua con Jenkins y Docker.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="skill-block">
-        <div class="skill-block-header">
-          <span class="skill-icon">🖥️</span>
-          <h4>Frontend</h4>
+        <div class="card">
+            <h3>Sistema HondaNet - Gestión Empresarial Completa</h3>
+            <p>
+                Participación en el desarrollo y mantenimiento del sistema interno HondaNet,
+                abarcando múltiples módulos críticos del negocio.
+            </p>
+            <ul>
+                <li>Gestión de usuarios y perfiles con control de permisos por rol.</li>
+                <li>Sistema de proveedores: cargos, abonos y contabilización.</li>
+                <li>Módulo de remuneraciones interno.</li>
+                <li>Sistema de gestión de requerimientos y respuestas.</li>
+                <li>Desarrollo Full Stack con C#, ASP.NET MVC, Razor y SQL Server.</li>
+                <li>Implementación de seguridad con JWT.</li>
+            </ul>
         </div>
-        <div class="skill-tags">
-          <span class="stag primary">Angular v10</span>
-          <span class="stag primary">Angular v11</span>
-          <span class="stag primary">Angular v14</span>
-          <span class="stag primary">Angular v16</span>
-          <span class="stag primary">Angular v21</span>
-          <span class="stag">React</span>
-          <span class="stag">Razor</span>
-          <span class="stag">JavaScript</span>
-          <span class="stag">jQuery</span>
-          <span class="stag">Bootstrap</span>
-          <span class="stag">TypeScript</span>
+
+        <div class="card">
+            <h3>Migración de Datos Internacional (ETL)</h3>
+            <p>
+                Migración de datos desde servidores en México hacia Chile, asegurando la integridad
+                y consistencia de la información mediante procesos ETL.
+            </p>
+            <ul>
+                <li>Extracción, transformación y carga de datos (ETL).</li>
+                <li>Normalización y validación de datos.</li>
+                <li>Optimización de procesos de migración.</li>
+                <li>Uso de SQL Server y herramientas de integración.</li>
+            </ul>
         </div>
-      </div>
 
-      <div class="skill-block">
-        <div class="skill-block-header">
-          <span class="skill-icon">🗄️</span>
-          <h4>Bases de Datos</h4>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contacto</h2>
+        <p>Email: pabloaraneda32@gmail.com</p>
+             <div class="buttons">
+
+            <a href="https://wa.me/56922474997" target="_blank" class="btn"> Contáctame por WhatsApp </a>
+            <a href="https://www.linkedin.com/in/pablo-ignacio-araneda-ruz-50228894/" target="_blank"
+                class="btn btn-linkedin"> Ver mi LinkedIn </a>
         </div>
-        <div class="skill-tags">
-          <span class="stag primary">SQL Server</span>
-          <span class="stag">MySQL</span>
-          <span class="stag">PostgreSQL</span>
-          <span class="stag">Oracle</span>
-          <span class="stag">Stored Procedures</span>
-          <span class="stag">Triggers</span>
-          <span class="stag">ETL</span>
-        </div>
-      </div>
+    </section>
 
-      <div class="skill-block">
-        <div class="skill-block-header">
-          <span class="skill-icon">🚀</span>
-          <h4>DevOps &amp; Herramientas</h4>
-        </div>
-        <div class="skill-tags">
-          <span class="stag primary">Docker</span>
-          <span class="stag">Jenkins</span>
-          <span class="stag">GitLab CI</span>
-          <span class="stag">GitHub</span>
-          <span class="stag">Maven</span>
-          <span class="stag">Postman</span>
-          <span class="stag">SonarQube</span>
-          <span class="stag">Fortify</span>
-          <span class="stag">Veracode</span>
-          <span class="stag">Scrum / Agile</span>
-        </div>
-      </div>
-
-      <div class="skill-block">
-        <div class="skill-block-header">
-          <span class="skill-icon">☁️</span>
-          <h4>Servidores de Aplicaciones</h4>
-        </div>
-        <div class="skill-tags">
-          <span class="stag">Apache Tomcat</span>
-          <span class="stag">Oracle WebLogic</span>
-          <span class="stag">IBM WebSphere</span>
-          <span class="stag">IIS</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- IA & DEV TOOLS -->
-  <section id="ai-tools" class="ai-section section-padded">
-    <div class="section-label">04 — Innovación</div>
-    <h2 class="section-title">IA &amp; Herramientas de Desarrollo</h2>
-    <p class="section-intro">
-      Incorporo herramientas de inteligencia artificial en el ciclo de desarrollo para aumentar productividad,
-      calidad de código y velocidad de entrega en proyectos empresariales modernos.
-    </p>
-
-    <div class="ai-grid">
-
-      <div class="ai-card featured-ai">
-        <div class="ai-card-top">
-          <div class="ai-logo claude">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#D97757"/><path d="M20.5 8.5L11.5 23.5M11.5 8.5L20.5 23.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
-          </div>
-          <div>
-            <h3>Claude Code</h3>
-            <span class="ai-badge">Uso activo</span>
-          </div>
-        </div>
-        <p>Asistente de desarrollo CLI/IDE de Anthropic. Utilizado para scaffolding de proyectos .NET 8/9,
-          generación de controladores, servicios y tests en ASP.NET Core, refactoring guiado y revisión
-          de arquitectura en tiempo real.</p>
-        <div class="ai-use-cases">
-          <span>Scaffolding .NET 8/9</span>
-          <span>Refactoring</span>
-          <span>Code review</span>
-          <span>ASP.NET Core</span>
-        </div>
-      </div>
-
-      <div class="ai-card">
-        <div class="ai-card-top">
-          <div class="ai-logo generic">🤖</div>
-          <div>
-            <h3>IA en Honda</h3>
-            <span class="ai-badge prod">Producción</span>
-          </div>
-        </div>
-        <p>Integración de chatbot con IA en el sistema HondaNet para soporte interno a usuarios,
-          automatizando consultas frecuentes y reduciendo carga operativa.</p>
-        <div class="ai-use-cases">
-          <span>Chatbot corporativo</span>
-          <span>Soporte interno</span>
-          <span>ASP.NET MVC</span>
-        </div>
-      </div>
-
-      <div class="ai-card">
-        <div class="ai-card-top">
-          <div class="ai-logo generic">⚡</div>
-          <div>
-            <h3>Desarrollo Aumentado</h3>
-            <span class="ai-badge">Metodología</span>
-          </div>
-        </div>
-        <p>Flujo de trabajo que combina LLMs para generar código base, completar tests unitarios
-          y revisar vulnerabilidades de seguridad, complementando herramientas como SonarQube y Fortify.</p>
-        <div class="ai-use-cases">
-          <span>Unit tests</span>
-          <span>Security review</span>
-          <span>Documentation</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PROYECTOS -->
-  <section id="projects" class="projects section-padded">
-    <div class="section-label">05 — Proyectos</div>
-    <h2 class="section-title">Proyectos Destacados</h2>
-
-    <div class="projects-grid">
-
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-icon">💳</div>
-          <div class="project-meta">
-            <h3>Integración Transbank — Fonasa</h3>
-            <span class="project-client">Fonasa · 2021</span>
-          </div>
-        </div>
-        <p>Integración de la API de Transbank para gestión de pagos en línea en el sistema Bono Web
-          de Fonasa, habilitando la compra de bonos de atención médica para millones de beneficiarios.</p>
-        <div class="project-stack">
-          <span>Spring Boot</span><span>Oracle</span><span>WebLogic</span><span>Transbank API</span><span>REST</span>
-        </div>
-        <ul class="project-highlights">
-          <li>Servicios REST con Spring Boot para gestión transaccional.</li>
-          <li>Validación de estados de pago y control de idempotencia.</li>
-          <li>Lógica de negocio en procedimientos almacenados Oracle.</li>
-          <li>Despliegue en Oracle WebLogic en ambiente de alta disponibilidad.</li>
-        </ul>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-icon">🚢</div>
-          <div class="project-meta">
-            <h3>Control de Embarcaciones — SERNAPESCA</h3>
-            <span class="project-client">SERNAPESCA · 2023</span>
-          </div>
-        </div>
-        <p>Sistema para control y validación de carga de embarcaciones pesqueras, verificando
-          cumplimiento normativo de límites de peso según regulación vigente.</p>
-        <div class="project-stack">
-          <span>Spring Boot</span><span>Angular 11</span><span>SQL Server</span><span>Jenkins</span><span>Docker</span>
-        </div>
-        <ul class="project-highlights">
-          <li>Arquitectura de microservicios desacoplados con Spring Boot.</li>
-          <li>Frontend SPA con Angular 11 y validación reactiva de formularios.</li>
-          <li>Motor de reglas de negocio para carga máxima por tipo de embarcación.</li>
-          <li>Pipeline CI/CD completo con Jenkins y Docker.</li>
-        </ul>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-icon">🏢</div>
-          <div class="project-meta">
-            <h3>HondaNet — ERP Empresarial</h3>
-            <span class="project-client">Honda · 2024–2025</span>
-          </div>
-        </div>
-        <p>Desarrollo y mantenimiento del sistema interno HondaNet, cubriendo módulos críticos
-          del negocio automotriz con integración de IA para soporte a usuarios.</p>
-        <div class="project-stack">
-          <span>C#</span><span>ASP.NET MVC</span><span>SQL Server</span><span>JWT</span><span>Docker</span><span class="pill-ai">IA</span>
-        </div>
-        <ul class="project-highlights">
-          <li>Módulo de gestión de proveedores con cargos, abonos y contabilización.</li>
-          <li>Sistema de remuneraciones y control de requerimientos internos.</li>
-          <li>RBAC (Role-Based Access Control) con JWT y perfiles granulares.</li>
-          <li>Chatbot con IA integrado para soporte de primera línea.</li>
-        </ul>
-      </div>
-
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-icon">🔄</div>
-          <div class="project-meta">
-            <h3>Migración ETL Internacional</h3>
-            <span class="project-client">México → Chile · Multinacional</span>
-          </div>
-        </div>
-        <p>Proceso de migración de datos desde servidores en México hacia infraestructura en Chile,
-          garantizando integridad, consistencia y trazabilidad completa del proceso.</p>
-        <div class="project-stack">
-          <span>SQL Server</span><span>ETL</span><span>SSIS</span><span>T-SQL</span>
-        </div>
-        <ul class="project-highlights">
-          <li>Diseño de pipeline ETL con extracción, transformación y carga incremental.</li>
-          <li>Normalización y validación de datos con reglas de calidad automatizadas.</li>
-          <li>Reconciliación de registros entre sistemas origen y destino.</li>
-          <li>Minimización de downtime con estrategia de migración en ventanas nocturnas.</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contact" class="contact section-padded">
-    <div class="section-label">06 — Contacto</div>
-    <h2 class="section-title">¿Trabajamos juntos?</h2>
-    <p class="section-intro">Disponible para proyectos de desarrollo, consultoría técnica y posiciones full-time.</p>
-
-    <div class="contact-grid">
-      <a href="mailto:pabloaraneda32@gmail.com" class="contact-card">
-        <div class="contact-icon">✉️</div>
-        <div>
-          <strong>Email</strong>
-          <span>pabloaraneda32@gmail.com</span>
-        </div>
-      </a>
-      <a href="https://wa.me/56922474997" target="_blank" class="contact-card">
-        <div class="contact-icon">💬</div>
-        <div>
-          <strong>WhatsApp</strong>
-          <span>+56 9 2247 4997</span>
-        </div>
-      </a>
-      <a href="https://www.linkedin.com/in/pablo-ignacio-araneda-ruz-50228894/" target="_blank" class="contact-card">
-        <div class="contact-icon">🔗</div>
-        <div>
-          <strong>LinkedIn</strong>
-          <span>pablo-ignacio-araneda-ruz</span>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <footer>
-    <div class="footer-inner">
-      <span class="footer-logo"><span class="accent">&lt;</span>PA<span class="accent">/&gt;</span></span>
-      <p>© 2026 Pablo Ignacio Araneda Ruz · Full Stack Developer · Santiago, Chile</p>
-      <p class="footer-stack">C# · .NET · Angular · Spring Boot · Claude Code</p>
-    </div>
-  </footer>
-
-  <script>
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 40);
-    });
-
-    // Mobile toggle
-    document.getElementById('navToggle').addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.toggle('open');
-    });
-
-    // Smooth scroll + close mobile menu
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector('.nav-links').classList.remove('open');
-        document.querySelector(a.getAttribute('href'))
-          ?.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    // Scroll reveal
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.08 });
-
-    document.querySelectorAll('.card, .skill-block, .project-card, .ai-card, .highlight-card, .contact-card, .timeline-item')
-      .forEach(el => {
-        el.classList.add('reveal');
-        observer.observe(el);
-      });
-
-    // Active nav link on scroll
-    const sections = document.querySelectorAll('section[id], header');
-    const navLinks = document.querySelectorAll('.nav-links a');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(s => {
-        if (window.scrollY >= s.offsetTop - 120) current = s.id;
-      });
-      navLinks.forEach(l => {
-        l.classList.toggle('active', l.getAttribute('href') === '#' + current);
-      });
-    });
-  </script>
+    <footer>
+        <p>© 2026 Pablo Araneda</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href'))
+                    .scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
+
 </html>
